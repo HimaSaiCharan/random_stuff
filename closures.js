@@ -37,7 +37,7 @@ const cycle = function (offset) {
 };
 
 // ********************************* distribute ************************
-const cycle = function (fruits) {
+const cyclic = function (fruits) {
   let count = -1;
 
   return function (person) {
@@ -50,7 +50,7 @@ const cycle = function (fruits) {
   };
 };
 
-const distribute = cycle(['apple', 'orange', 'strawberry']);
+const distribute = cyclic(['apple', 'orange', 'strawberry']);
 const persons = ['hima', 'sui', 'jay', 'aka'];
 console.log(persons.map(distribute));
 
