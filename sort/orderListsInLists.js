@@ -12,13 +12,13 @@ const getList = function (list) {
   return list;
 };
 
-const orderBy = function (fn) {
+const orderBy = function (getProperty) {
   return function (a, b) {
-    if (fn(a) < fn(b)) {
+    if (getProperty(a) < getProperty(b)) {
       return -1;
     }
 
-    if (fn(a) > fn(b)) {
+    if (getProperty(a) > getProperty(b)) {
       return 1;
     }
 
