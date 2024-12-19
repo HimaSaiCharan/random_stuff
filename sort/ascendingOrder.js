@@ -1,4 +1,4 @@
-const array = [13, 86, 23];
+const array = [13, 86, 23, 12];
 
 array.sort(function (a, b) {
   if (a < b) {
@@ -22,7 +22,7 @@ array1.sort(function (a, b) {
   return a - b;
 });
 
-console.log(array1);
+// console.log(array1);
 
 // *************************************************************
 
@@ -36,7 +36,7 @@ array2.sort(function (a, b) {
   return Math.abs(a) - Math.abs(b);
 });
 
-console.log(array2);
+// console.log(array2);
 
 // ************************************************************
 
